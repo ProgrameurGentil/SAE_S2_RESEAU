@@ -1,0 +1,6 @@
+# mise en place de l'interface & demande d'adresse
+cp /shared/interfaces /etc/network/interfaces
+/etc/init.d/networking restart
+
+# resolution des noms pour la connection réseau
+cp /shared/resolv.conf /etc/resolv.conf

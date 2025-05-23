@@ -1,0 +1,1 @@
+cp /shared/resolv.conf /etc/resolv.conf
