@@ -1,11 +1,11 @@
 # configuration des IPs et des routes
-ip address add 172.16.0.2/17 dev eth0
+ip address add 172.16.0.3/17 dev eth0
 ip address add 192.168.0.1/24 dev eth1
 
 ip link set dev eth0 up
 ip link set dev eth1 up
 
-ip route add default via 172.16.0.1
+ip route add default via 172.16.0.2
 
 # resolution des noms pour la connection réseau
 cp /shared/resolv.conf /etc/resolv.conf
