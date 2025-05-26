@@ -1,8 +1,6 @@
-# configuration des IPs et des routes
 ip address add 192.168.0.4/24 dev eth0
 ip link set dev eth0 up
 
 ip route add default via 192.168.0.1
 
-# resolution des noms pour la connection réseau
 cp /shared/resolv.conf /etc/resolv.conf
