@@ -7,3 +7,5 @@ ip link set dev eth1 up
 ip route add default via 172.16.0.2
 
 cp /shared/resolv.conf /etc/resolv.conf
+
+iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
