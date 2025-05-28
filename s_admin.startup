@@ -10,8 +10,6 @@ apt install -y openssh-server
 
 echo "root:root" | chpasswd
 
-sed -i 's/^#PermitRootLogin.*/PermitRootLogin yes/' /etc/ssh/sshd_config
-sed -i 's/^#PasswordAuthentication.*/PasswordAuthentication yes/' /etc/ssh/sshd_config
-sed -i 's/^PasswordAuthentication no/PasswordAuthentication yes/' /etc/ssh/sshd_config
+cp  /shared/sshd_config /etc/ssh/sshd_config
 
 service ssh restart
