@@ -7,6 +7,9 @@ cp /shared/resolv.conf /etc/resolv.conf
 
 apt update
 apt install -y openssh-client openssh-server
+apt-get install vsftpd
+
+cp /shared/vsftpd.conf /etc/vsftpd.conf
 
 echo "root:root" | chpasswd
 
