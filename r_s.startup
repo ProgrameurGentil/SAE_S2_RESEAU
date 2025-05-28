@@ -5,7 +5,7 @@ ip link set dev eth0 up
 ip link set dev eth1 up
 
 ip route add default via 10.0.1.1
-ip route add 192.168.0.0/24 via 172.16.0.2
+ip route add 192.168.0.0/24 via 172.16.0.3
 
 cp /shared/resolv.conf /etc/resolv.conf
 
