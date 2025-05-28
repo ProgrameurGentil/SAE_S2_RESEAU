@@ -6,6 +6,11 @@ ip link set dev eth0 up
 ip link set dev eth1 up
 ip link set dev eth2 up
 
+ip route add 172.16.0.0/17 via 10.0.1.2
+ip route add 192.168.0.0/24 via 10.0.1.2
+ip route add 172.15.100.0/22 via 10.0.2.2
+ip route add 172.15.96.0/22 via 10.0.3.2
+
 iptables -t nat -A POSTROUTING -o eth3 -j MASQUERADE
 
 cp /shared/resolv.conf /etc/resolv.conf
